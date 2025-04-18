@@ -13,20 +13,17 @@ namespace Peysahovich41
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Peysahovich41Entities : DbContext
+    public partial class Peysahovich41Entitie : DbContext
     {
-        private static Peysahovich41Entities _context;
-        public static Peysahovich41Entities GetContext()
+        private static Peysahovich41Entitie _context;
+        public static Peysahovich41Entitie GetContext()
         {
             if (_context == null)
-            {
-                _context = new Peysahovich41Entities();
-
-            }
+                _context = new Peysahovich41Entitie();
             return _context;
         }
-        public Peysahovich41Entities()
-            : base("name=Peysahovich41Entities")
+        public Peysahovich41Entitie()
+            : base("name=Peysahovich41Entitie")
         {
         }
     

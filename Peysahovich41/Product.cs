@@ -38,10 +38,15 @@ namespace Peysahovich41
             get
             {
                 if (ProductPhoto != null)
+                {
                     return "images/" + ProductPhoto;
-                else return null;
+                }
+                else
+                    return null;
             }
         }
+        public Nullable<int> Quantity { get; set; }
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderProduct> OrderProduct { get; set; }
     }

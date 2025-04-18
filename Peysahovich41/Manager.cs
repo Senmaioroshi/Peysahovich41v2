@@ -10,5 +10,6 @@ namespace Peysahovich41
     internal class Manager
     {
         public static Frame MainFrame { get; set; }
+        public static Button OrderBtn { get; set; }
     }
 }
